@@ -7,4 +7,13 @@ Direct Query: Direct Query models store only meta data info and will query the d
 -Data source resources are flexible with adhoc traffic
 -while connecting to database(you get an option of direct query)
 
+Dual model: store data both in power bi app and in underlying dataset
 Live connection: 
+Very Few db support live connection
+Power BI dataset support it(only through live connection)
+Power BI datasets are live, any changes will immideatly be seen in the dashboard
+
+WriteBack capability
+
+Data Flow: ETL
+
