@@ -17,3 +17,5 @@ WriteBack capability
 
 Data Flow: ETL
 
+Start vs Snowflake Schema:
+in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
