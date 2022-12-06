@@ -3,6 +3,7 @@ Import data-- data is loaded into Power BI app(makes report fast and need high p
 Direct Query: Direct Query models store only meta data info and will query the data source based on the requiremtn(good for realtime data)
 -while data model is huge , user direct query
 -real time scenario
+- No data is loaded to memory of power BI
 -Data source resources are flexible with adhoc traffic
 -while connecting to database(you get an option of direct query)
 
