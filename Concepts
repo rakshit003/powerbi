@@ -34,3 +34,21 @@ Start vs Snowflake Schema:
 in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
 
 We can seperate different components on Power BI - DataFlow, Dataset and Reporting for reuse.
+
+
+************DAX*************
+
+Context:
+Row Context: 
+Calculation is performened for each and every row.All calcuated columns are using row context.
+Row context is passed across table by utilizing relationship between 2 tables.
+
+for calcualted columns -if we want to use 2 columns from 2 different tables in same formula , we need to use related function. Does not apply to Measure.
+
+Filter context: under what consideration a value is being evaluated. for eg if in a sheet we have uplied a filter and a sugsection. then aggregation
+is only performed on the active filter.
+
+
+
+
+
