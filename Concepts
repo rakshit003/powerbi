@@ -25,6 +25,9 @@ helps in decoupling of data preperation layer from power bi reporting layer. Wha
 Dataset: Build relationship between tables, Hierarchies. DAX calculation and field formating and configuration is done by dataset.
 Dataset can be shared in that way it can be reused by multiple reporting layer.
 
+Think Power BI report- These reports donot have a dataset by itself. Like normaly when you publish a power it publishes both dataset and visualization in same app.
+Thin reports does not have a dataset and leverage an existing dataset from server.
+
 Start vs Snowflake Schema:
 in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
 
