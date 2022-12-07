@@ -26,7 +26,7 @@ Dataset: Build relationship between tables, Hierarchies. DAX calculation and fie
 Dataset can be shared in that way it can be reused by multiple reporting layer.
 
 Think Power BI report- These reports donot have a dataset by itself. Like normaly when you publish a power it publishes both dataset and visualization in same app.
-Thin reports does not have a dataset and leverage an existing dataset from server.
+Thin reports does not have a dataset and leverage an existing dataset from server. These reports can have live connections with PBI shared datsets
 
 Start vs Snowflake Schema:
 in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
