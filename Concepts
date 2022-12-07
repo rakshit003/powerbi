@@ -1,13 +1,17 @@
 Data Acquisition
 Import data-- data is loaded into Power BI app(makes report fast and need high performance)
-Direct Query: Direct Query models store only meta data info and will query the data source based on the requiremtn(good for realtime data)
+Direct Query: Direct Query models store only meta data info and will query the data source based on the requiremtn(good for realtime data). 
+Every visualization sends real time query to a database when a filter is selected in dashboard.No need to schedule dashboard.
+Usefully if data volumne is very high and can't be loaded in a powerbi app.
+
+
 -while data model is huge , user direct query
 -real time scenario
 - No data is loaded to memory of power BI
 -Data source resources are flexible with adhoc traffic
 -while connecting to database(you get an option of direct query)
 
-Dual model: store data both in power bi app and in underlying dataset
+Dual model: store data both in power bi app and direct query.
 Live connection: 
 Very Few db support live connection
 Power BI dataset support it(only through live connection)
@@ -15,7 +19,9 @@ Power BI datasets are live, any changes will immideatly be seen in the dashboard
 
 WriteBack capability
 
-Data Flow: ETL
+Data Flow: ETL(Is performed throw power query in cloud). Its a good way to seperate ETL layer with data and Reporting layer. This can be used without power bi application as well
 
 Start vs Snowflake Schema:
 in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
+
+We can seperate different components on Power BI - DataFlow, Dataset and Reporting for reuse.
