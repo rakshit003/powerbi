@@ -23,6 +23,7 @@ Data Flow: ETL(Is performed throw power query in cloud). Its a good way to seper
 helps in decoupling of data preperation layer from power bi reporting layer. What data flow does not support is modelling part of data which is done by dataset.
 
 Dataset: Build relationship between tables, Hierarchies. DAX calculation and field formating and configuration is done by dataset.
+Dataset can be shared in that way it can be reused by multiple reporting layer.
 
 Start vs Snowflake Schema:
 in start , dimentions are only connected to fact tables. In snowflag, dimention table are also connected to other dimension tables(mainly sub dimnetions)
