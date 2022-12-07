@@ -54,4 +54,4 @@ for calcualted columns -if we want to use 2 columns from 2 different tables in s
 Filter context: under what consideration a value is being evaluated. for eg if in a sheet we have uplied a filter and a sugsection. then aggregation
 is only performed on the active filter.
 
-Calculate Function: Will aggregated data by passing a specific filter context(subset table)
+Calculate Function: Will aggregated data by passing a specific filter or ignore filter context(subset table)
