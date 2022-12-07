@@ -35,6 +35,12 @@ in start , dimentions are only connected to fact tables. In snowflag, dimention 
 
 We can seperate different components on Power BI - DataFlow, Dataset and Reporting for reuse.
 
+Real Time vs live datasets
+
+Real time/streaming dashboard means when data is pushed from bottom up - from database to the dashboard as soon as a new entry is added into the db
+Live/Direct Query: This is a top down data refresh. User request the data to be refreshed through a refresh button or selecting a filter.
+New data is not automatically seen in the dashoard unless user refresh the dashboard or passes some kind of command to refresh it.
+
 
 ************DAX*************
 
@@ -47,7 +53,6 @@ for calcualted columns -if we want to use 2 columns from 2 different tables in s
 
 Filter context: under what consideration a value is being evaluated. for eg if in a sheet we have uplied a filter and a sugsection. then aggregation
 is only performed on the active filter.
-
 
 
 
